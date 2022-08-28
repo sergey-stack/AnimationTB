@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rIG-Yu-Chr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="Zhm-aS-bvg">
+            <objects>
+                <viewController id="cCE-oL-scc" customClass="Item2ViewController" customModule="AnimationTBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsX-gp-JLv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kri-a8-T7X">
+                                <rect key="frame" x="84" y="600" width="246" height="50"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Random Animate">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startActiviteIndicate:" destination="cCE-oL-scc" eventType="touchUpInside" id="EsE-tk-IjV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dwH-jo-yC9"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.56864727096052359" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kri-a8-T7X" firstAttribute="top" secondItem="dwH-jo-yC9" secondAttribute="top" constant="556" id="28S-e9-olm"/>
+                            <constraint firstItem="kri-a8-T7X" firstAttribute="leading" secondItem="dwH-jo-yC9" secondAttribute="leading" constant="84" id="T2q-4O-eyf"/>
+                            <constraint firstItem="dwH-jo-yC9" firstAttribute="trailing" secondItem="kri-a8-T7X" secondAttribute="trailing" constant="84" id="fjt-Zb-YSl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="5Db-By-qFs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbj-5f-v2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="434.59821428571428"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Kjp-Kp-6C9">
+            <objects>
+                <viewController id="FHd-k5-Dfi" customClass="Item1ViewController" customModule="AnimationTBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7a-uS-XMC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-2v-JlC" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="100" y="663" width="214" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Random Animate">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionSpringButton:" destination="FHd-k5-Dfi" eventType="touchUpInside" id="Kax-GW-Mnn"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dh-sV-16Y" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="87" y="273" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.58006852509959639" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lRe-kq-DFJ"/>
+                        <color key="backgroundColor" red="0.53977945413996853" green="0.63686482485178886" blue="0.65710257550682682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lRe-kq-DFJ" firstAttribute="trailing" secondItem="JBi-2v-JlC" secondAttribute="trailing" constant="100" id="1kU-2a-xAh"/>
+                            <constraint firstItem="lRe-kq-DFJ" firstAttribute="trailing" secondItem="6dh-sV-16Y" secondAttribute="trailing" constant="87" id="3fN-8F-2ME"/>
+                            <constraint firstItem="JBi-2v-JlC" firstAttribute="top" secondItem="6dh-sV-16Y" secondAttribute="bottom" constant="262" id="6MT-jx-d2K"/>
+                            <constraint firstItem="JBi-2v-JlC" firstAttribute="top" secondItem="lRe-kq-DFJ" secondAttribute="top" constant="619" id="6vp-Pd-AlR"/>
+                            <constraint firstItem="6dh-sV-16Y" firstAttribute="top" secondItem="lRe-kq-DFJ" secondAttribute="top" constant="229" id="EYE-u4-m9I"/>
+                            <constraint firstItem="JBi-2v-JlC" firstAttribute="leading" secondItem="lRe-kq-DFJ" secondAttribute="leading" constant="100" id="I1L-qg-Ux0"/>
+                            <constraint firstItem="6dh-sV-16Y" firstAttribute="leading" secondItem="lRe-kq-DFJ" secondAttribute="leading" constant="87" id="xdE-81-Vxa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="sVY-Zh-hX1"/>
+                    <connections>
+                        <outlet property="springButton" destination="JBi-2v-JlC" id="g0Z-Vb-4Ba"/>
+                        <outlet property="springView" destination="6dh-sV-16Y" id="mbI-0H-S20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdH-de-NPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="-172.09821428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xBh-AI-HFq">
+            <objects>
+                <tabBarController id="rIG-Yu-Chr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YEL-et-0Xl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FHd-k5-Dfi" kind="relationship" relationship="viewControllers" id="47c-1b-2G4"/>
+                        <segue destination="cCE-oL-scc" kind="relationship" relationship="viewControllers" id="u5I-SN-8ET"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMW-aH-Gyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
