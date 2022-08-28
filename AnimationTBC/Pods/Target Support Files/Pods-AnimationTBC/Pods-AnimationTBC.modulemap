@@ -1,0 +1,6 @@
+framework module Pods_AnimationTBC {
+  umbrella header "Pods-AnimationTBC-umbrella.h"
+
+  export *
+  module * { export * }
+}
