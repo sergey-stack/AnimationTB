@@ -16,18 +16,14 @@ class Item1ViewController: UIViewController {
     
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-    }
     
     @IBAction func actionSpringButton(_ sender: SpringButton) {
         
-        springView.animation = animation.randomElement()!.rawValue
+        springView.animation = AnimationType.allCases.randomElement()!.rawValue
         springView.animate()
-        springView.animation = curves.randomElement()!.rawValue
+        springView.animation = Curve.allCases.randomElement()!.rawValue
         springView.animate()
-        springView.animation = propert.randomElement()!.rawValue
+        springView.animation = Properties.allCases.randomElement()!.rawValue
         springView.animate()
         
         

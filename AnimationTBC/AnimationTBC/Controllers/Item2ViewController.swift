@@ -11,12 +11,12 @@ import UIKit
 class Item2ViewController: UIViewController {
     @IBAction func startActiviteIndicate(_ sender: UIButton) {
         let indicatorType = NVActivityIndicatorType.allCases.randomElement()
-        let loading = NVActivityIndicatorView(frame: .zero, type: indicatorType, color: .blue, padding: 0)
+        let loading = NVActivityIndicatorView(frame: .zero, type: indicatorType, color: .green, padding: 0)
 
         loading.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loading)
-        NSLayoutConstraint.activate([loading.widthAnchor.constraint(equalToConstant: 30),
-                                     loading.heightAnchor.constraint(equalToConstant: 30),
+        NSLayoutConstraint.activate([loading.widthAnchor.constraint(equalToConstant: 60),
+                                     loading.heightAnchor.constraint(equalToConstant: 80),
                                      loading.centerXAnchor.constraint(equalTo: view.centerXAnchor),
                                      loading.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
 
@@ -27,7 +27,4 @@ class Item2ViewController: UIViewController {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

@@ -45,7 +45,7 @@ case easeIn
 case easeOut
 case easeInOut
 }
-let curves = Curve.allCases
+
 
 
 enum Properties:String, CaseIterable {
@@ -59,4 +59,4 @@ case repeatCount
 case scale
 }
 
-let propert = Properties.allCases
+
